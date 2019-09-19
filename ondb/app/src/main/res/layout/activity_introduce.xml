@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg1"
+    android:layout_height="match_parent"
+    tools:context="com.example.monte.ondb.Introduce">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF015858"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/rule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="59dp"
+            android:orientation="vertical"
+            android:weightSum="13">
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="33dp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="328dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/hostellogowhite" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="36dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Welcome!"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="31dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Please read the following instruction carefully then press Sign up "
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="16dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="36dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="
+الطلاب الجدد الحاصلون على شهادات معادله من داخل مصر
+يتوفر لدى المدينة نوعين من الخدمات يختار الطالب بينهم
+ ( سكن + طعام) وتكلفتها 750  جنيه
+(سكن بدون طعام) وتكلفتها500 جنيه
+فى حالة قبول التسجيل يجب تسديد المصروفات وتقديم المستندات المطلوبه فى خلال اسبوعين فقط من التسجيل
+فى حالة تقديم مستندات غير حقيقه يتم حظر الطالب نهائيا من تقديم طلب للسكن
+الخدمه غير مسموحه للطلاب  المتزوجين
+يرجى التحقق من تعليمات ادارة المدينة والالتزام بها
+لا تعطى اسم المستخدم وكلمة السر لاى شخص مطلقا ويجب تذكره دائما للاستخدام طوال فترة السكن"
+                android:textColor="#ffff"
+                android:textSize="10dp" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="31dp" />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

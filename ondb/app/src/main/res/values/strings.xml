@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Student Hostels</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="colleage">choose your colleage</string>
+    <string-array name="colleage">
+        <item>Faculty of Arts</item>
+
+        <item> Faculty of Economics</item>
+        <item> Faculty of Education</item>
+        <item> Faculty of law</item>
+        <item> Faculty of Agriculture</item>
+        <item> Faculty of pharmacy</item>
+        <item> Faculty of Medicine</item>
+        <item> Faculty of Dentistry</item>
+        <item> Faculty of Sciences</item>
+        <item>  Faculty of Fine Arts</item>
+        <item> Faculty of computer and information systems</item>
+        <item> Faculty of Architecture</item>
+        <item>Faculty of Civil Engineering</item>
+        <item> Faculty of Political Sciences</item>
+        <item> Faculty of commerce</item>
+    </string-array>
+    <string-array name="religion">
+        <item>muslim</item>
+
+        <item> Christina</item>
+    </string-array>
+    <string-array name="months">
+
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+
+    <string-array name="book_type">
+        <item>food</item>
+        <item>nofood</item>
+    </string-array>
+    <string name="book">choose book type</string>
+    <string name="title_activity_edit_profile">Edit_profile</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

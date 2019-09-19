@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "870730784735",
+    "firebase_url": "https://ondb-c1eec.firebaseio.com",
+    "project_id": "ondb-c1eec",
+    "storage_bucket": "ondb-c1eec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870730784735:android:69cfc301e8dcc6cd",
+        "android_client_info": {
+          "package_name": "com.example.monte.ondb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870730784735-husmeadse6gglkoc1hdpep2h50n032dk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.monte.ondb",
+            "certificate_hash": "93271f10b7f4538b048469f18c94adcfbcc5d132"
+          }
+        },
+        {
+          "client_id": "870730784735-9kc8s2gglruqo1vj2ddpqnjqqa9diter.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_uyKvWh_5dbwTUSwrj7sZKhJrGn6uyDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870730784735-9kc8s2gglruqo1vj2ddpqnjqqa9diter.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

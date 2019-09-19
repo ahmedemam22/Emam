@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item android:title="main menu"
+        app:showAsAction="always"
+        android:icon="@drawable/menu3">
+        <menu>
+
+
+            <item
+                android:id="@+id/send"
+                android:icon="@drawable/myprofile"
+                android:title="accepted students"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/waiting"
+                android:icon="@drawable/myprofile"
+                android:title="waited students"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/confirm"
+                android:icon="@drawable/book"
+                android:title="confirm"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/show"
+                android:icon="@drawable/myprofile"
+                android:title="show rate"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/distribute"
+                android:icon="@drawable/myprofile"
+                android:title="Distribution"
+                app:showAsAction="never"
+                />
+
+
+
+
+
+
+
+        </menu>
+    </item>
+
+</menu>

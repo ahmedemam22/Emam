@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.monte.ondb.service">
+
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF015858"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Request Service"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="348dp"
+        android:layout_height="571dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+
+        <TextView
+            android:id="@+id/emergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Emergency"
+            android:textColor="#FF010000"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/group">
+            <RadioButton
+                android:id="@+id/electricity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Electricity Problem "
+                android:textAlignment="viewStart"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/doctor"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Request Doctor "
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/ambulance"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ambulance"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/water"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Water Problem "
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/gas"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Gas Problem"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/fire"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fire Alarm"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/vacation"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vacation Request"
+                android:textSize="24sp" />
+            <TextView
+                android:id="@+id/maintan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Maintenance"
+                android:textColor="#FF010000"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+            <RadioButton
+                android:id="@+id/office"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Office change"
+                android:layout_gravity="center"
+                android:textSize="24sp" />
+
+            <RadioButton
+                android:id="@+id/bed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="Bad change    "
+                android:textSize="24sp" />
+
+
+        </RadioGroup>
+
+
+
+
+
+
+
+
+        <Button
+
+            android:id="@+id/request"
+            android:layout_width="168dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Request ! "
+            android:background="@drawable/rectangle_button"
+            android:textAlignment="center"
+            android:textColor="#ffffffff"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+

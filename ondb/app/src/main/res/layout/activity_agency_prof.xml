@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.monte.ondb.Agency_prof">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF015858"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Agency Profile"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/agency"
+        android:layout_width="345dp"
+        android:layout_height="646dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="59dp"
+        android:orientation="vertical"
+        android:weightSum="15">
+
+
+
+
+
+        <ImageView
+            android:id="@+id/imagagency"
+            android:layout_width="315dp"
+            android:layout_height="192dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/agency" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:text="Elmawaheb Agency"
+            android:textColor="#FF015858"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="6th of october city ,Giza ,Egypt"
+            android:textColor="#FF015858"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="0123456789"
+            android:textColor="#FF015858"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:text="ID:2019112"
+            android:textColor="#FF015858"
+            android:textSize="18sp" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="36dp" />
+        <Button
+            android:id="@+id/add"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="add advs"
+            android:background="@drawable/rectangle_button"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangle_button"
+            android:text="update advs"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+android:background="@drawable/rectangle_button"
+            android:text="Log out"
+            android:textAllCaps="false"
+            android:textColor="#FF015858"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>

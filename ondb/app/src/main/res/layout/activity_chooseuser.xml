@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.example.monte.ondb.Chooseuser">
+    <LinearLayout
+        android:id="@+id/open"
+        android:layout_width="363dp"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@android:dimen/app_icon_size"
+        android:orientation="vertical"
+        android:weightSum="19"
+        android:visibility="gone">
+
+
+
+
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/que"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:text="Who_are_you"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="33sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="New user? Create account now!"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="student"
+            android:id="@+id/student"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="agency"
+            android:layout_weight="1"
+            android:id="@+id/agency"
+
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="supervisor"
+            android:layout_weight="1"
+            android:id="@+id/supervisor"
+
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="admin"
+            android:layout_weight="1"
+            android:id="@+id/admin"
+
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        >
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="144dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="150dp"
+            android:layout_height="333dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/hostellogowhite" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

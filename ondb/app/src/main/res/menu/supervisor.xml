@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item android:title="main menu"
+        app:showAsAction="always"
+        android:icon="@drawable/menu3">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:icon="@drawable/myprofile"
+                android:title="My Profile"
+                android:orderInCategory="1"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/update"
+                android:icon="@drawable/book"
+                android:title="update attendance"
+                android:orderInCategory="2"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/services"
+                android:icon="@drawable/serices"
+                android:title="Services"
+                android:orderInCategory="3"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/rating"
+                android:title="Show Rate"
+                android:orderInCategory="4"
+                app:showAsAction="never"/>
+
+</menu>
+    </item>
+</menu>

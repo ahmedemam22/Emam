@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item android:title="main menu"
+        app:showAsAction="always"
+        android:icon="@drawable/menu3">
+        <menu>
+            <item
+                android:id="@+id/profile"
+               android:icon="@drawable/myprofile"
+                android:title="My Profile"
+                android:orderInCategory="1"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/book"
+                android:icon="@drawable/book"
+                android:title="Book a room"
+                android:orderInCategory="2"
+                app:showAsAction="never"/>
+
+
+            <item
+                android:id="@+id/browse"
+                android:icon="@drawable/browse_ads"
+                android:title="Browse Ads"
+                android:orderInCategory="3"
+                app:showAsAction="never"
+                />
+
+
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/rating"
+                android:title="Rate System"
+                android:orderInCategory="6"
+                app:showAsAction="never"/>
+
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/log"
+                android:title="Logout"
+                android:orderInCategory="7"
+                app:showAsAction="never"/>
+
+        </menu>
+
+    </item>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://www.facebook.com/?ref=tn_tnmn#" />
+
+</menu>

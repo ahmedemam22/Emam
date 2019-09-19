@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context="com.example.monte.ondb.Edit_profile">
+    <LinearLayout
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginHorizontal="@android:dimen/app_icon_size"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+
+    <TextView
+        android:id="@+id/tital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Edit profile"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:autofillHints=""
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+
+            android:hint=" password"
+
+            android:textColorHint="@color/colorAccent"
+
+            android:textSize="24sp" />
+        <EditText
+            android:id="@+id/confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:textColor="@color/colorAccent"
+
+            android:hint="confirm password"
+
+            android:textColorHint="@color/colorAccent"
+
+            android:textSize="24sp" />
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:hint=" mobile"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="24sp"
+            android:textColor="@color/colorAccent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="upload a personal picture"
+                android:layout_weight="1"
+                android:id="@+id/personal"
+                />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="2" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/update"
+            style="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:text="update"
+            android:textSize="18sp"
+
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

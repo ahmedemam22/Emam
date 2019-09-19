@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.monte.ondb.Add_adv">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF015858"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Advertisement"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/addads"
+        android:layout_width="345dp"
+        android:layout_height="646dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="59dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/note5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Please fill following information"
+            android:textAlignment="center"
+            android:textColor="#FF015858"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/floorno"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Floor No."
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/numrooms"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Number of rooms"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Price"
+            android:inputType="numberSigned" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="from:"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="#FF015858"
+                android:textSize="18sp"/>
+            <Spinner
+                android:id="@+id/from"
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:entries="@array/months"
+                android:layout_weight="1"
+                style="@style/spinner"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to:"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="#FF015858"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:id="@+id/to"
+                style="@style/spinner"
+                android:layout_width="237dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:entries="@array/months" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <Button
+                android:id="@+id/uploadphotos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FF015858"
+                android:text="Upload Photos"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/image"
+                android:layout_weight="2"/>
+        </LinearLayout>
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/publish"
+            android:layout_width="161dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+android:background="@drawable/rectangle_button"
+            android:text="Publish"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

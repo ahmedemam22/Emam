@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.monte.ondb.Sign"
+    android:background="@drawable/bg">
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/toolbar"
+        style="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF015858"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign Up"
+            android:textColor="#ffffff"
+            android:textSize="22dp" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="59dp"
+        android:orientation="vertical"
+        android:weightSum="12">
+
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:hint=" first Name"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            android:textColor="#FF015858"
+            android:textColorHint="#FF015858"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:hint=" last Name"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            android:textColor="#FF015858"
+            android:textColorHint="#FF015858"
+            android:textSize="24sp" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:hint=" email"
+            android:inputType="textEmailAddress"
+            android:textColor="#FF015858"
+            android:textColorHint="#FF015858"
+            android:textSize="24sp" />
+
+
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Password"
+            android:inputType="textPassword"
+
+            android:textColor="#FF015858"
+
+            android:textColorHint="#FF015858"
+
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="grade"
+            android:textColor="#FF015858"
+            android:textColorHint="#FF015858"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="189dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/colleage"
+                android:textColor="#FF015858"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                style="@style/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:entries="@array/colleage"
+                android:prompt="@string/colleage">
+
+            </Spinner>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:hint="mobile"
+            android:textColor="#FF015858"
+            android:textColorHint="#FF015858"
+            android:textSize="24sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+            <Button
+                android:id="@+id/personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="upload a personal picture"
+                android:textColor="#ffff"
+                android:background="@drawable/rectangle_button"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/personal_pic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="2" />
+
+
+        </LinearLayout>
+
+
+
+        <Space
+            android:layout_width="328dp"
+            android:layout_height="27dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/birth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="upload a birth certificate"
+                android:background="@drawable/rectangle_button"
+                android:textColor="#fff"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/birth_pic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="religion"
+                android:textColor="#FF015858"
+                android:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/religion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:entries="@array/religion">
+
+            </Spinner>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register"
+            style="@style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>
